@@ -1,0 +1,95 @@
+-----------------###########INTERNET INFORMATION SERVICES###########----------------------
+QUE (1).>Can one web application have multiple application pool?
+
+Application pool is a collection of one or more websites running as a single process called w3wp.exe with a single identity. ... You can have multiple websites running under a single application pool, but you can not have a single website running in multiple application pools
+
+QUE (2).>What is a application pool in IIS?
+
+Application pools are used to separate sets of IIS worker processes that share the same configuration and application boundaries. Application pools used to isolate our web application for better security, reliability, and availability and performance and keep running without impacting each other .
+
+QUE (3).>What is Application pool and worker process?
+
+An Application Pool with multiple worker processes is called a Web Garden. Many worker processes with the same Application Pool can sometimes provide better throughput performance and application response time. A Web Garden is a site configured to run within multiple processes on a single server.
+
+QUE (4).>How do I create a worker process in IIS?
+Open IIS (Start > inetmgr).
+Select Application Pools from the left-hand navigation pane.
+Locate the application pool Secret Server is running as. ...
+Right-click the application pool, and then click Advanced Settings.
+Under the Process Model section, set the Idle Time-out (minutes) option to 0.
+
+QUE (5).>What is default app pool in IIS?
+
+Application Pool Identity Accounts. Worker processes in IIS 6.0 and in IIS 7 run as Network Service by default. ... The Windows operating system provides a feature called "virtual accounts" that allows IIS to create a unique identity for each of its application pools.
+
+QUE (6).>What is the use of worker process in IIS?
+
+An IIS Worker Process (w3wp.exe) handles the web requests sent to the IIS web server for the configured IIS application pool. IIS application pools also provide a bunch of advanced settings. These impact the behavior of w3wp and your IIS worker process.
+
+QUE (7).>What is application domain in IIS?
+
+Application Domain is an ASP.NET concept which provides isolation for each ASP.NET application. Application Pool is an IIS concept which also provides isolation but at the process level. Application Domain is available only for ASP.NET applications. ... You can recycle the Application Pool in the IIS manager.
+
+QUE (8).>What is application pool identity in IIS?
+
+If so, you will be happy to hear that IIS has a security feature called the application pool identity. ... An application pool identity allows you to run an application pool under a unique account without having to create and manage domain or local accounts.
+
+QUE (9).>What is a worker process in IIS?
+
+Worker Process: Worker Process (w3wp.exe) runs the ASP.Net application in IIS. ... When a request comes to the server from a client worker process is responsible for generating the request and response. In a single word, we can say worker process is the heart of ASP.NET Web Application which runs on IIS.
+
+QUE (10).>What is w3wp EXE?
+
+An Internet Information Services (IIS) worker process is a windows process (w3wp.exe) which runs Web applications, and is responsible for handling requests sent to a Web Server for a specific application pool. It is the worker process for IIS.
+
+QUE (11).>How do I give permission to ApplicationPoolIdentity?
+
+Open Windows Explorer.
+Select Sitecore installation directory.
+Right click the file and select “Properties”
+Select the “Security” tab.
+Click the “Edit” and then “Add” button.
+Click the “Locations” button and make sure you select thelocal machine.
+
+QUE (12).>What is Iis_iusrs?
+
+IIS_IUSRS is the group for IIS Worker Process Accounts. This means the identity that the application pool itself runs under. IUSR is the anonymous user identity. That means the identity that IIS believes to be the user who is accessing the site.
+
+QUE (13).>How do I add user permissions to a folder in IIS?
+
+Open Windows Explorer.
+Select the directory the Smartcrypt Manager is installed under (eg: c:\web\mds)
+Right click the directory and select Properties.
+Select the Security tab.
+Click the Edit button and then Add button.
+Click the Locations button and make sure that you select your computer.
+
+QUE (14).>Can I delete Defaultapppool?
+
+DefaultAppPool folder gets created if you install the service Internet Information Service on your computer. It is not a virus or a malware. ... If you have installed this service on your computer then it is not safe to delete this folder. You can refer the link below to know more about IIS
+
+QUE (15).>How do I kill a worker process in IIS?
+
+Open IIS (Start > inetmgr).
+Select Application Pools from the left-hand navigation pane.
+Locate the application pool Secret Server is running as. ...
+Right-click the application pool, and then click Advanced Settings.
+Under the Process Model section, set the Idle Time-out (minutes) option to 0.
+
+QUE (15).>What is AppDomain in asp net?
+
+Asp.Net introduces the concept of an Application Domain which is shortly known as AppDomain. ... As the operating system uses a process to isolate misbehaving code, the .NET runtime uses an AppDomain to isolate code inside of a secure boundary.
+
+QUE (16).>What is the purpose of application pool in IIS?
+
+An application pool is a group of one or more URLs that are served by a worker process or set of worker processes. Application pools are used to separate sets of IIS worker processes that share the same configuration and application boundaries.
+
+
+
+
+
+
+
+
+
+
