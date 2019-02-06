@@ -1,0 +1,72 @@
+USE [PaceTestDb]
+GO
+
+/****** Object:  Table [dbo].[tblemployee2]    Script Date: 2/6/2019 6:24:57 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[tblemployee2](
+	[ID] [bigint] IDENTITY(1,1) NOT NULL,
+	[Name] [nvarchar](100) NULL,
+	[Address] [nvarchar](100) NULL,
+	[City] [nvarchar](100) NULL,
+	[State] [nvarchar](100) NULL,
+	[Country] [nvarchar](100) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+
+
+
+USE [PaceTestDb]
+GO
+/****** Object:  StoredProcedure [dbo].[Usp_InsertUpdateDelete]    Script Date: 03/17/2014 14:52:39 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+Alter proc [dbo].[Usp_EmpInsertUpdateDelete]
+@ID Bigint =0 ,
+@Name Nvarchar(100) = null,
+@Address Nvarchar(max) = null,
+@City int = 0,
+@State int = 0,
+@Country int = 0,
+@Query int
+as  
+begin
+if(@Query = 1)
+begin 
+   INSERT INTO [dbo].[tblemployee2]([Name],[Address],[City],[State],[Country]) VALUES(@Name,@Address,@City,@State,@Country)
+end
+if(@@ROWCOUNT > 0)
+begin
+    select 'Insert'
+end
+if(@Query = 2)
+begin
+    UPDATE [dbo].[tblemployee2] SET [Name]=@Name,[Address]=@Address,[City]=@City,[State]=@State,[Country]=@Country where ID=@ID
+    select 'Update'
+end
+if(@Query = 3)
+begin
+  Delete from [dbo].[tblemployee2] where [dbo].[tblemployee2].ID =@ID
+  select 'Deleted'
+end
+if(@Query = 4)
+begin
+   Select * from [dbo].[tblemployee2]
+end
+if(@Query = 5)
+begin
+    Select * from [dbo].[tblemployee2] where [dbo].[tblemployee2].ID =@ID
+end
+end
