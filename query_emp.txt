@@ -70,3 +70,33 @@ begin
     Select * from [dbo].[tblemployee2] where [dbo].[tblemployee2].ID =@ID
 end
 end
+
+
+---------Update On 08 Jan 2019------------
+Alter proc Usp_Register
+ @Id int,
+ @UserName varchar(100),
+ @EmailId varchar(50),
+ @UserType varchar(20),
+ @MobileNo char(10), 
+ @Password varchar(100),
+ @CountryId int,
+ @StateId int,
+ @CityId int,
+ @IsActive bit,
+ @Userpic varchar(max),
+ @Query int
+As
+Begin
+   Declare @Userid Varchar(200)  
+   if(@Query=1)
+	     Begin
+		    Set @Userid= (SUBSTRING(@UserName,0,2) + SUBSTRING(@MobileNo,0,2) +SUBSTRING(@UserType,0,2))
+						   		
+		    Insert Into tbl_UserRegister(UserId,UserName,EmailId,UserType,[MobileNo],[Password],[Country],[State],[City],User_pic,[IsActive]) 
+			values(@UserId,@UserName,@EmailId,@UserType,@MobileNo,Convert(varbinary,@Password),@CountryId,@StateId,@CityId,@Userpic,@IsActive)
+
+			select 'Insert'
+		 End  		 
+	
+End
