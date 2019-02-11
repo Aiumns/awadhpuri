@@ -1,0 +1,6 @@
+
+--What happen when cleintmode off globally
+
+https://www.c-sharpcorner.com/UploadFile/c3a146/difference-between-output-parameter-and-return-value-in-stor/
+
+https://www.codeproject.com/Tips/828514/Using-SqlParameter-Direction-in-Csharp-Net-with-wi
