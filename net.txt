@@ -1,0 +1,27 @@
+how to store null value in int variable c#
+
+what is return type of connection open close ,excute reader excutenonquery,
+
+what is diffrent between datarowbound and rowcommand gridview asp.net
+And.>
+RowCommand event fires when a button is clicked from inside the GridView Row. 
+Can be used to Delete, Update, Select, Insert (Yes, you can add insert functionality too into the GridView, read http://www.dotnetfunda.com/articles/article180.aspx ) or perform any custom operation on click of the button / link from inside the GridView row. 
+
+RowDataBound event fires when the data row is bound to the data source of the GridView. 
+Can be used to customize the look and feel of the GridView rows or bound any custom data based on some other data to the GridView rows.
+
+
+why we use property over variable.
+
+why use static in c#
+
+can i this keyword inside static method
+
+Ans.>Because this points to an instance of the class, in the static method you don't have an instance
+
+can i Access static member inside nonstatic method
+And.>Static members are not instance members , these are shared by class , so basically any instance method can access these static members . Yes, a static method can access a non-static variable. This is done by creating an object to the class and accessing the variable through the object
+
+can i inherite static class
+
+can i access 

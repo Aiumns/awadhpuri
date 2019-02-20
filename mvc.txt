@@ -1,0 +1,11 @@
+Html.Partial returns a String. Html.RenderPartial calls Write internally and returns void.
+
+The basic usage is:
+
+// Razor syntax
+@Html.Partial("ViewName")
+@{ Html.RenderPartial("ViewName");  }
+
+// WebView syntax
+<%: Html.Partial("ViewName") %>
+<% Html.RenderPartial("ViewName"); %>

@@ -1,0 +1,26 @@
+What is the basic difference between ADO.net and Entity Framework?
+
+Why should we use Entity Data Model instead of Commands and Datasets?
+
+Answer.>>
+
+ADO.NET entity is an ORM (object relational mapping) which creates a higher abstract object model over ADO.NET components. So rather than getting into dataset, datatables, command, and connection objects as shown in the below code, you work on higher level domain objects like customers, suppliers, etc.
+
+DataTable table = adoDs.Tables[0];
+for (int j = 0; j < table.Rows.Count; j++)
+{
+    DataRow row = table.Rows[j];
+
+    // Get the values of the fields
+    string CustomerName =
+        (string)row["Customername"];
+    string CustomerCode =
+        (string)row["CustomerCode"];
+}
+
+Below is the code for Entity Framework in which we are working on higher level domain objects like customer rather than with base level ADO.NET components (like dataset, datareader, command, connection objects, etc.).
+
+foreach (Customer objCust in obj.Customers)
+{}
+
+The main and the only benefit of EF is it auto-generates code for the Model (middle layer), Data Access Layer, and mapping code, thus reducing a lot of development time.
