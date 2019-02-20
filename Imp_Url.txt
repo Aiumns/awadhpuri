@@ -11,3 +11,14 @@ https://medium.com/omarelgabrys-blog/primitive-data-types-in-c-vs-java-5b8a597ee
 https://medium.com/omarelgabrys-blog/properties-vs-fields-in-c-6cec86c59dc9
 
 https://www.codeproject.com/Articles/476967/What-is-ViewData-ViewBag-and-TempData-MVC-Option-2
+
+//web server status code 301 and 302
+When the permanent attribute is false the redirect uses the 302 status code, otherwise a 301 redirect is made. When just the Location header is mentioned without explicitly mentioning the status code, a 302 temporary redirect is implied. Keep this in mind.
+//url here for that just above
+http://www.wrox.com/WileyCDA/Section/Redirecting-HTTP-301-Status-Codes-with-ASP-NET-and-IIS.id-306460.html
+
+----------------------------------------------
+https://www.codeproject.com/Articles/758458/Passing-Data-View-to-Controller-Controller-to-View
+
+https://stackoverflow.com/questions/22931220/how-to-get-textbox-value-from-view-to-controller-in-mvc4-on-submit-button-click
+
