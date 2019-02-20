@@ -4,3 +4,10 @@
 https://www.c-sharpcorner.com/UploadFile/c3a146/difference-between-output-parameter-and-return-value-in-stor/
 
 https://www.codeproject.com/Tips/828514/Using-SqlParameter-Direction-in-Csharp-Net-with-wi
+
+
+https://medium.com/omarelgabrys-blog/primitive-data-types-in-c-vs-java-5b8a597eef05
+
+https://medium.com/omarelgabrys-blog/properties-vs-fields-in-c-6cec86c59dc9
+
+https://www.codeproject.com/Articles/476967/What-is-ViewData-ViewBag-and-TempData-MVC-Option-2
