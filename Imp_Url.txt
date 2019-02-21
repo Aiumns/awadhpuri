@@ -22,3 +22,7 @@ https://www.codeproject.com/Articles/758458/Passing-Data-View-to-Controller-Cont
 
 https://stackoverflow.com/questions/22931220/how-to-get-textbox-value-from-view-to-controller-in-mvc4-on-submit-button-click
 
+------Print Pyramid using c# and other series also
+https://chikkanti.wordpress.com/2018/04/08/c-program-to-print-triangle-with-different-symbols-and-letters-smiley-copyright-star-numbers-on-console/
+
+http://www.codedirection.com/print-pyramid-pattern-in-c/
