@@ -26,3 +26,24 @@ https://stackoverflow.com/questions/22931220/how-to-get-textbox-value-from-view-
 https://chikkanti.wordpress.com/2018/04/08/c-program-to-print-triangle-with-different-symbols-and-letters-smiley-copyright-star-numbers-on-console/
 
 http://www.codedirection.com/print-pyramid-pattern-in-c/
+
+//diffrent in peek and kepp in mvc
+https://stackoverflow.com/questions/21252888/tempdata-keep-vs-peek
+
+//today interview question
+
+que1.>we have two method inside abstract class 1 is abstract and another is nonabstract and i want to use in simple class how do it.
+
+que2.>diffrent between private and static constructor
+
+que3.>can i declare property inside interface and whatever else
+
+que4.>diffrent between protected and protected internal
+
+que5.>what is viewtable inside sql
+
+que6.>can i insert null in foreign key
+
+que7.>what is couple class in c#
+
+que8.>what is partial class in c#
