@@ -47,3 +47,20 @@ que6.>can i insert null in foreign key
 que7.>what is couple class in c#
 
 que8.>what is partial class in c#
+
+
+Various Return Types From MVC Controller
+https://www.c-sharpcorner.com/UploadFile/dacca2/various-return-types-from-mvc-controller/
+
+
+Different Types Of Action Results In ASP.NET MVC
+https://www.c-sharpcorner.com/article/different-types-of-action-results-in-asp-net-mvc/
+
+
+what is anonyms Type c#
+https://www.tutorialsteacher.com/csharp/csharp-anonymous-type
+
+what is primitive data type in c#.net
+https://medium.com/omarelgabrys-blog/primitive-data-types-in-c-vs-java-5b8a597eef05
+
+
