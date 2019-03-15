@@ -1,0 +1,17 @@
+Benefits of Stored Procedures
+
+Precompiled execution
+
+SQL Server compiles each Stored Procedure once and then reutilizes the execution plan. This results in tremendous performance boosts when Stored Procedures are called repeatedly.
+
+Reduced client/server traffic
+
+If network bandwidth is a concern in your environment then you'll be happy to learn that Stored Procedures can reduce long SQL queries to a single line that is transmitted over the wire.
+
+Efficient reuse of code and programming abstraction
+
+Stored Procedures can be used by multiple users and client programs. If you utilize them in a planned manner then you'll find the development cycle requires less time.
+
+Enhanced security controls
+
+You can grant users permission to execute a Stored Procedure independently of underlying table permissions.
