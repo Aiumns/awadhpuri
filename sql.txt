@@ -1,0 +1,109 @@
+------------------------***********Procedures************-----------------
+Create PROCEDURE  [db_owner].[SP_DynamicExcelSheet_Uploading]
+
+@tbltype_DynamicExcelSheet [db_owner].[Dynamic_tbltype]  READONLY     
+
+AS
+
+IF (EXISTS(SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'db_owner' AND  TABLE_NAME = 'DynamicExcelSheet'))
+
+Begin
+
+drop table [db_owner].[DynamicExcelSheet]
+
+      select * into [db_owner].[DynamicExcelSheet] FROM @tbltype_DynamicExcelSheet    
+
+End
+
+else
+
+Begin
+
+   select * into [db_owner].[DynamicExcelSheet] FROM  @tbltype_DynamicExcelSheet    
+
+End
+
+------------------------***********Procedure2************-----------------
+--drop proc [dbo].[CreateAnd_Drop_type]
+----select * from [db_owner].[DynamicExcelSheet]
+CREATE Procedure [db_owner].[CreateAnd_Drop_type]
+  @sql as nvarchar(max)
+AS
+BEGIN TRY 
+declare @sql2 varchar(max)
+--Need to implement on billing_master table save new record with new column or with existing column both at the same time 
+--DDL OPERATION OR CREATION ONLY NOT DATA MANIPULATION
+set @sql2='Create PROCEDURE  [db_owner].[SP_DynamicExcelSheet_Uploading]
+					 @tbltype_DynamicExcelSheet [db_owner].[Dynamic_tbltype]  READONLY     
+					 AS
+					 IF (EXISTS(SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = ''db_owner'' AND  TABLE_NAME = ''DynamicExcelSheet''))
+					 Begin
+						   drop table [db_owner].[DynamicExcelSheet]
+						   select * into [db_owner].[DynamicExcelSheet] FROM @tbltype_DynamicExcelSheet    
+					 End
+					 else
+					 Begin
+						   select * into [db_owner].[DynamicExcelSheet] FROM  @tbltype_DynamicExcelSheet    
+					 End'
+IF(EXISTS(SELECT * FROM sys.procedures where name like '%SP_DynamicExcelSheet_Uploading%'))
+ Begin   
+           --select 222
+           drop proc [db_owner].[SP_DynamicExcelSheet_Uploading]         
+           IF (EXISTS(SELECT * FROM sys.table_types where name like '%Dynamic_tbltype%'))
+			 Begin        
+					 drop type [db_owner].[Dynamic_tbltype] 
+					 exec(@sql) 
+					 --select 333       
+			 End 
+			 else
+			 Begin
+			         --select 444 
+					 exec(@sql)  
+			 End
+			 exec(@sql2)           
+	         --select 444
+ End
+ Else
+ Begin
+                IF (EXISTS(SELECT * FROM sys.table_types where name like '%Dynamic_tbltype%'))
+					Begin        
+							 drop type [db_owner].[Dynamic_tbltype]					 
+							 --This may changeable table type
+							 exec(@sql) 					    
+							 --select 555       
+					End 
+					else
+					Begin
+					         --select 666    
+							 exec(@sql) 	   
+					End 
+	                exec(@sql2)
+	               --select 777
+  End  
+END TRY 
+BEGIN CATCH 
+        Return @@error
+END CATCH 
+
+------------------------***********Table Type But Create Dynamic No Need To Create Manually************-----------------
+
+USE [PaceTestDb]
+GO
+/****** Object:  UserDefinedTableType [db_owner].[Dynamic_tbltype]    Script Date: 3/13/2019 4:38:33 PM ******/
+CREATE TYPE [db_owner].[Dynamic_tbltype] AS TABLE(
+	[ExbName] [varchar](300) NULL,
+	[ContactNo] [varchar](300) NULL,
+	[Email] [varchar](300) NULL,
+	[Address] [varchar](300) NULL,
+	[Area] [varchar](300) NULL,
+	[PinCode] [varchar](300) NULL,
+	[FairName] [varchar](300) NULL,
+	[Compbrsno] [int] NULL,
+	[UpdatedOn] [date] NULL,
+	[UpdatedBy] [varchar](300) NULL,
+	[remarks] [varchar](300) NULL
+)
+GO
+
+
+
