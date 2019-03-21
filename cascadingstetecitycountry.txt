@@ -1,0 +1,70 @@
+create table RUser(Id int identity(1,1),UserName varchar(max),UserProfile varchar(max),Address varchar(max),ContactNo varchar(20),
+   EmailId varchar(100),DateOfBirth date,Gender varchar(10),UserType varchar(20),CountryId int,
+           StateId int,CityId int,Pincode varchar(20),IsActive bit)
+---------------------------------------------------------------------------
+
+
+USE [PacePowerTest]
+GO
+/****** Object:  Table [dbo].[tbl_city]    Script Date: 3/22/2019 12:09:27 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[tbl_city](
+	[City_id] [int] NOT NULL,
+	[State_id] [int] NULL,
+	[City] [nvarchar](max) NULL,
+ CONSTRAINT [PK_tbl_city] PRIMARY KEY CLUSTERED 
+(
+	[City_id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[tbl_Country]    Script Date: 3/22/2019 12:09:27 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[tbl_Country](
+	[Country_id] [int] IDENTITY(1,1) NOT NULL,
+	[Country_Name] [nvarchar](50) NULL,
+ CONSTRAINT [PK_tbl_Country] PRIMARY KEY CLUSTERED 
+(
+	[Country_id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[tbl_state]    Script Date: 3/22/2019 12:09:27 AM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[tbl_state](
+	[State_id] [int] NOT NULL,
+	[Country_id] [int] NULL,
+	[State] [nvarchar](max) NULL,
+ CONSTRAINT [PK_tbl_state] PRIMARY KEY CLUSTERED 
+(
+	[State_id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+INSERT [dbo].[tbl_city] ([City_id], [State_id], [City]) VALUES (1, 1, N'Gorakhpur')
+INSERT [dbo].[tbl_city] ([City_id], [State_id], [City]) VALUES (2, 1, N'Deoria')
+INSERT [dbo].[tbl_city] ([City_id], [State_id], [City]) VALUES (3, 1, N'Basti')
+INSERT [dbo].[tbl_city] ([City_id], [State_id], [City]) VALUES (4, 1, N'Varansi')
+SET IDENTITY_INSERT [dbo].[tbl_Country] ON 
+
+INSERT [dbo].[tbl_Country] ([Country_id], [Country_Name]) VALUES (1, N'India')
+INSERT [dbo].[tbl_Country] ([Country_id], [Country_Name]) VALUES (2, N'Pakistan')
+INSERT [dbo].[tbl_Country] ([Country_id], [Country_Name]) VALUES (3, N'Nepal')
+INSERT [dbo].[tbl_Country] ([Country_id], [Country_Name]) VALUES (4, N'China')
+SET IDENTITY_INSERT [dbo].[tbl_Country] OFF
+INSERT [dbo].[tbl_state] ([State_id], [Country_id], [State]) VALUES (1, 1, N'Utter Pradesh')
+INSERT [dbo].[tbl_state] ([State_id], [Country_id], [State]) VALUES (2, 1, N'Bihar')
+INSERT [dbo].[tbl_state] ([State_id], [Country_id], [State]) VALUES (3, 1, N'New delhi')
+INSERT [dbo].[tbl_state] ([State_id], [Country_id], [State]) VALUES (4, 1, N'Haryana')
