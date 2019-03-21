@@ -1,3 +1,11 @@
+https://www.c-sharpcorner.com/article/creating-simple-cascading-dropdownlist-in-mvc/
+
+https://www.c-sharpcorner.com/blogs/drop-down-list-selected-index-changed-event-in-mvc
+
+https://www.c-sharpcorner.com/blogs/cascading-dropdownlist-in-asp-net-mvc
+
+https://www.c-sharpcorner.com/UploadFile/sourabh_mishra1/cascading-dropdownlist-in-Asp-Net-mvc/
+
 create table RUser(Id int identity(1,1),UserName varchar(max),UserProfile varchar(max),Address varchar(max),ContactNo varchar(20),
    EmailId varchar(100),DateOfBirth date,Gender varchar(10),UserType varchar(20),CountryId int,
            StateId int,CityId int,Pincode varchar(20),IsActive bit)
