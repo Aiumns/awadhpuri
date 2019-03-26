@@ -64,3 +64,14 @@ what is primitive data type in c#.net
 https://medium.com/omarelgabrys-blog/primitive-data-types-in-c-vs-java-5b8a597eef05
 
 
+---------Jquery Client side working with asp.net gridview
+https://www.aspdotnet-suresh.com/2015/07/jquery-ajax-gridview-crud-operations-insert-edit-update-delete-in-aspnet-using-csharp-vbnet.html
+
+--------------
+https://www.aspsnippets.com/Articles/Bind-Dataset-to-ASPNet-GridView-using-jQuery-AJAX.aspx
+--------------
+
+https://www.aspsnippets.com/Articles/Populate-Bind-ASPNet-ListBox-using-jQuery-AJAX-and-JSON-in-C-and-VBNet.aspx
+----------------------------
+https://www.aspdotnet-suresh.com/search/label/Ajax
+----------------------------------
