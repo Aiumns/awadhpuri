@@ -75,3 +75,5 @@ https://www.aspsnippets.com/Articles/Populate-Bind-ASPNet-ListBox-using-jQuery-A
 ----------------------------
 https://www.aspdotnet-suresh.com/search/label/Ajax
 ----------------------------------
+---basic authentication using web seriveces
+https://www.youtube.com/watch?v=7tIEzvL3-EA#action=share
