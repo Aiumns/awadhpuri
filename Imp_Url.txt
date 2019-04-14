@@ -81,3 +81,6 @@ https://www.youtube.com/watch?v=7tIEzvL3-EA#action=share
 -----------------------------------------Diffrent between collease and IsNull
 http://www.complexsql.com/difference-between-sql-and-tsql-sql-vs-tsql/
 ---------------------------------
+---------What's the difference between INNER JOIN, LEFT JOIN, RIGHT JOIN and FULL JOIN? [duplicate]
+
+https://stackoverflow.com/questions/5706437/whats-the-difference-between-inner-join-left-join-right-join-and-full-join
