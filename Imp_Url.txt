@@ -93,3 +93,7 @@ https://stackoverflow.com/questions/5706437/whats-the-difference-between-inner-j
 
 ---------------------------Aspnet Membersheep
 https://www.codeproject.com/Articles/281573/ASP-NET-Membership-and-Role-Provider
+
+-------------------Introduction to Change Data Capture (CDC) in SQL Server 2008
+https://www.red-gate.com/simple-talk/sql/learn-sql-server/introduction-to-change-data-capture-cdc-in-sql-server-2008/
+
