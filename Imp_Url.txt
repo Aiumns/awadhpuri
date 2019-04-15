@@ -90,3 +90,6 @@ http://www.complexsql.com/difference-between-sql-and-tsql-sql-vs-tsql/
 ---------What's the difference between INNER JOIN, LEFT JOIN, RIGHT JOIN and FULL JOIN? [duplicate]
 
 https://stackoverflow.com/questions/5706437/whats-the-difference-between-inner-join-left-join-right-join-and-full-join
+
+---------------------------Aspnet Membersheep
+https://www.codeproject.com/Articles/281573/ASP-NET-Membership-and-Role-Provider
