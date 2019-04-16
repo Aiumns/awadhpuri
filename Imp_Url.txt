@@ -1,9 +1,12 @@
 
 --What happen when cleintmode off globally
-
+----------------*************State Management *************
+https://www.c-sharpcorner.com/UploadFile/b926a6/state-management-concept-in-Asp-Net/
 
   -----------**************Mesrge Satatement and Using clouse
 https://social.msdn.microsoft.com/Forums/sqlserver/en-US/68676f0f-0488-4e0e-a544-dd03954c8341/replacing-cursor-with-merge?forum=transactsql
+
+
 
 https://www.sqlshack.com/understanding-cursors-replacing-joins-sql-server/
 ------------------------------------------------------------------------------------------
