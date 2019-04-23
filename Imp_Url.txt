@@ -1,5 +1,13 @@
 
 --What happen when cleintmode off globally
+
+--Callback Function jquery
+
+https://www.c-sharpcorner.com/UploadFile/dacca2/understand-jquery-ajax-function-callback-function-of-jquery/
+
+The keep() and peek() method is used to read the data without deletion the current read object. You can use Peek() when you always want to hold/prevent the value for another request. You can use Keep() when prevent/hold the value depends on additional logic.
+
+--------------------------------------------------------------------------------------
 ----------------*************State Management *************
 https://www.c-sharpcorner.com/UploadFile/b926a6/state-management-concept-in-Asp-Net/
 
