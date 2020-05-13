@@ -1,0 +1,55 @@
+server.js
+
+require('./models/db');
+
+
+const express=require('express');
+
+var app=express();
+
+app.listen(3100,()=>{
+    console.log('express server started at port no 3100');
+})
+
+####################### db.js
+
+const mongoose=require('mongoose');
+mongoose.connect('mongodb://localhost:27017/EmployeeDB',{useNewUrlParser=true},(err)=>{
+    if(!err)
+    {
+        console.log('cdb connected')
+    }
+    else
+    {
+        console.log('cdb connection Error')  
+    }
+});
+
+require('./employee.model');
+
+
+
+###################### employee.model.js
+
+
+const mongoose=require('mongoose');
+
+var employeeSchema=new mongoose.Schema({
+fullname :{
+    type :String
+},
+email : {
+    type :String
+},
+mobile :{
+    type :String
+},
+city :{
+    type :String
+}
+});
+
+mongoose.model('employee',employeeSchema);
+
+
+
